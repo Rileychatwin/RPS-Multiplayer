@@ -7,6 +7,8 @@
     <meta charset="UTF-8">
     <header>Train Schedule</header>
 
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -15,8 +17,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
     <!-- Firebase References -->
-    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
 
     <!-- Moment.js Reference -->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
@@ -67,9 +69,11 @@
                     <label for="frequency">Frequency (min)</label>
                     <input type="text" class="form-control" id="frequency-input" placeholder="00">
                 </div>
-                <button type="submit" class="btn btn-primary mx-sm-3 mb-2">submit</button>
+                <button id="add-button" type="submit" class="btn btn-primary mx-sm-3 mb-2">submit</button>
             </form>
         </div>
     </div>
+
+    <script src="./assets/javascript/app.js"></script>
 
 </body>
